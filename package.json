@@ -1,0 +1,30 @@
+{
+  "name": "rickmorty",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "pinia": "^2.1.7",
+    "rickmortyapi": "^2.3.0",
+    "vue": "^3.4.21",
+    "vue-router": "^4.0.13",
+    "vue-toastification": "^2.0.0-rc.5"
+  },
+  "devDependencies": {
+    "@types/vue": "^2.0.0",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "autoprefixer": "^10.4.19",
+    "loader": "^2.1.1",
+    "postcss": "^8.4.38",
+    "sass": "^1.77.5",
+    "tailwindcss": "^3.4.3",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0",
+    "vue-tsc": "^2.0.6"
+  }
+}
