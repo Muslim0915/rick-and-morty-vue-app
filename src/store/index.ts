@@ -41,6 +41,8 @@ export const useRickAndMortyStore: StoreDefinition = defineStore('store', () => 
 
     const saveStateToLocalStorage = () => {
         localStorage.setItem('characterState', JSON.stringify(state.character));
+        localStorage.setItem('locationState', JSON.stringify(state.location));
+        localStorage.setItem('episodeState', JSON.stringify(state.episode));
     };
 
 
@@ -75,8 +77,6 @@ export const useRickAndMortyStore: StoreDefinition = defineStore('store', () => 
             state.isLoading = false;
         }
     };
-
-    // Обновляем функции для работы с дженериками и обеспечиваем наличие поля "info"
     const loadNextData = async <T extends keyof State>(data: T, info: State[T] extends {
         info: { next?: string }
     } ? State[T]['info'] : never): Promise<void> => {
