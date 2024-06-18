@@ -61,10 +61,10 @@ onMounted(async () => {
         <h2 class="font-bold text-5xl uppercase text-blue-900">{{ character.name }}</h2>
       </div>
 
-      <div class="flex justify-between my-10">
-        <div class="flex flex-col w-1/4">
+      <div class="flex justify-between my-10 max-md:flex-col">
+        <div class="flex flex-col w-1/4 max-md:w-full max-md:mb-16">
           <h2 class="text-gray-400 text-2xl mb-5">Informations</h2>
-          <div class="flex flex-col">
+          <div class="flex flex-col max-md:w-full">
             <CharacterDetailsItem label="Gender" :value="character.gender" />
             <CharacterDetailsItem label="Status" :value="character.status" />
             <CharacterDetailsItem label="Species" :value="character.species" />

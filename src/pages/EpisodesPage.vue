@@ -48,7 +48,7 @@ onMounted(() => {
         <AppInput
             v-model="searchQuery"
             placeholder="Search episode"
-            class="w-1/2"
+            class="w-full"
         />
       </div>
       <div class="grid 2xl:grid-cols-5 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 gap-14 place-items-center mt-10">

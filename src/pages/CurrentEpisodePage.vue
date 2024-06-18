@@ -49,8 +49,8 @@ onMounted(async () => {
       <div class="w-full relative flex flex-col items-center gap-4 justify-center py-3 px-4">
         <GoBackButton />
         <div class="flex flex-col w-full text-center items-center gap-5">
-          <h2 class="font-bold text-7xl uppercase text-blue-900">{{ episode?.name }}</h2>
-          <div class="flex w-full justify-center gap-52">
+          <h2 class="font-bold text-7xl uppercase text-blue-900 max-md:text-3xl max-sm:text-xl">{{ episode?.name }}</h2>
+          <div class="flex w-full justify-center gap-52 max-sm:gap-10 max-sm:flex-col">
             <div class="flex flex-col gap-1">
               <h4 class="text-black font-bold text-xl">Episode:</h4>
               <span class="font-bold text-lg text-gray-400">{{ episode?.episode }}</span>
