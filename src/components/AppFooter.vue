@@ -1,6 +1,6 @@
 <template>
-  <footer class="bg-gray-800 text-white py-6 mt-10">
-    <div class="container flex items-center justify-between">
+  <footer class="bg-gray-800 text-white py-6 mt-10 max-sm:py-3">
+    <div class="container flex items-center justify-between max-sm:flex-col max-sm:gap-5">
       <p>
         &copy; 2022. All rights reserved.
       </p>

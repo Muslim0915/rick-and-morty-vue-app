@@ -22,7 +22,7 @@ const toggleNavbar = () => {
         <button
             @click="toggleNavbar"
             :class="isNavbarOpen ? 'active' : '' "
-            class="nav_btn hidden max-md:block relative w-[50px] h-[35px]"
+            class="nav_btn block md:hidden relative w-[50px] h-[35px]"
         >
           <span></span>
           <span></span>
@@ -70,7 +70,7 @@ const toggleNavbar = () => {
 }
 //media for mobile
 .navbar {
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     .nav_menu {
       flex-direction: column;
       position: absolute;

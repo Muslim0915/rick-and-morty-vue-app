@@ -38,13 +38,14 @@ const router: Router = createRouter({
     routes
 });
 
-router.beforeEach((to, from, next)=>{
+router.beforeEach((_to, _from, next) => {
     useRickAndMortyStore().state.isLoading = true;
     next();
 });
 
-router.afterEach((to, from)=>{
+router.afterEach((_to, _from) => {
     useRickAndMortyStore().state.isLoading = false;
 });
+
 
 export default router;
