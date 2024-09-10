@@ -1,0 +1,36 @@
+{
+  "homepage": "https://muslim0915.github.io/rick-and-morty/",
+  "name": "rickmorty",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d dist",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "path": "^0.12.7",
+    "pinia": "^2.2.2",
+    "rickmortyapi": "^2.3.0",
+    "vue": "^3.4.21",
+    "vue-router": "^4.4.3",
+    "vue-toastification": "^2.0.0-rc.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.5.4",
+    "@types/vue": "^2.0.0",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "autoprefixer": "^10.4.20",
+    "gh-pages": "^6.1.1",
+    "loader": "^2.1.1",
+    "postcss": "^8.4.45",
+    "sass": "^1.77.5",
+    "tailwindcss": "^3.4.10",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0",
+    "vue-tsc": "^2.0.6"
+  }
+}
