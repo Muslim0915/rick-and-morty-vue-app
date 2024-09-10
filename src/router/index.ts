@@ -40,7 +40,7 @@ const routes = [
         redirect: '/404'
     },
     {
-        path: '/rick-and-morty-vue-app',
+        path: '/rick-and-morty-vue-app/:pathMatch(.*)*',
         redirect: '/',
     }
 ];

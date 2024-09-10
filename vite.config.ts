@@ -4,7 +4,7 @@ import vue from '@vitejs/plugin-vue'
 
 export default defineConfig({
   plugins: [vue()],
-  base: "/rick-and-morty-vue-app/",
+  base: "/",
   resolve: {
     alias: [
       { find: '@', replacement: path.resolve(__dirname, 'src') }
